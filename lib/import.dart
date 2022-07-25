@@ -1,4 +1,4 @@
-import 'data/category.dart';
+import 'data/category_import.dart';
 
 void main() {
   var category = Category('1', 'Handphone');
