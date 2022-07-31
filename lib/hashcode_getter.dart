@@ -17,5 +17,5 @@ void main() {
   var category1 = Category('1', 'Handphone');
 
   print(category.hashCode);
-  print(category.hashCode);
+  print(category1.hashCode);
 }
