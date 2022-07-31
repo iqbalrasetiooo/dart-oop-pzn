@@ -1,6 +1,12 @@
 import 'dart:mirrors';
 
-class Repository {
+abstract class CategoryRepository {
+  id(String id);
+  name(String name);
+  quantity(String quantity);
+}
+
+class Repository extends CategoryRepository {
   final String _name;
   Repository(this._name);
 
@@ -14,8 +20,8 @@ class Repository {
 }
 
 void main() {
-  dynamic repository = Repository('product');
+  Repository repository = Repository('product');
   repository.id("123");
-  repository.name("123");
-  repository.quantity("123");
+  repository.name("Iqbal");
+  repository.quantity("1");
 }
